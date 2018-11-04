@@ -1,0 +1,48 @@
+﻿.about{
+    @extend .module;
+    height: 656px;
+    background-color: #F5F5F5;
+    background-image: url(/static/images/about_bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.about-content{
+    margin: 0 auto;
+    width: 1200px;
+}
+.enterprise-module{
+    @extend .relative;
+    padding: 90px 40px 0;
+    width: 1200px;
+    height: 186px;
+    color: #4D4D4D;
+    font-size: 16px;
+    &:first-child{
+        background: #FFF;
+        .about-text{
+            text-indent: 2em;
+            line-height: 22px;
+        }
+    }
+    li{
+        margin-bottom: 20px;
+    }
+    li::before{
+        @extend .fl, .show;
+        content: "■";
+        margin-right: 20px;
+        color: #45AAF0;
+        transform: scale(0.5, 0.5);
+    }
+}
+.about-tit{
+    @extend .absolute;
+    top: 20px;
+    left: -6px;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #FFF;
+    background: url(/static/images/small_tit_bg.png) no-repeat;
+}

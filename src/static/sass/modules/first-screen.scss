@@ -1,0 +1,29 @@
+﻿.carousel{
+    @extend .module, .relative;
+    height: 845px;
+    background: url(/static/images/carousel.png) no-repeat;
+    background-size: cover;
+}
+.easier{
+    margin: 356px auto 0;
+    width: 1126px;
+    height: 120px;
+    background: url(/static/images/easier.png) no-repeat;
+}
+.book{
+    @extend .absolute;
+    bottom: -100px;
+    left: 266px;
+    width: 488px;
+    height: 412px;
+    background: url(/static/images/book.png) no-repeat;
+}
+.banner-text{
+    @extend .absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 364px;
+    height: 268px;
+    background: url(/static/images/banner_text.png) no-repeat;
+}

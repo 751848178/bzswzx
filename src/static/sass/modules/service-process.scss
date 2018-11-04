@@ -1,0 +1,52 @@
+﻿.service-process{
+    @extend .module;
+    height: 550px;
+    background: url(/static/images/service_process_bg.png) no-repeat;
+    .module-tit .en{
+        padding-left: 10px;
+        letter-spacing: 6px;
+    }
+}
+.process-content{
+    margin-left: -24px;
+    width: 1260px;
+    height: 252px;
+}
+.process-item{
+    @extend .fl;
+    margin-right: 16px;
+    padding-top: 20px;
+    width: 194px;
+    height: 252px;
+    background: url(/static/images/process_border.png) no-repeat;
+    background-position: left bottom;
+    background-color: #FFF;
+    &:last-child{
+        @extend .o-hidden;
+    }
+}
+.process-tit{
+    @extend .relative;
+    padding: 12px 10px 12px 30px;
+    width: 210px;
+    height: 60px;
+    color: #FFF;
+    background: url(/static/images/process_bg.png) no-repeat;
+    img{
+        @extend .absolute;
+        top: 12px;
+        left: 10px;
+        height: 36px;
+    }
+    div{
+        margin-top: 2px;
+        font-size: 12px;
+        letter-spacing: -1px;
+    }
+}
+.process-text{
+    margin: 30px 0 0 30px;
+    width: 134px;
+    font-size: 18px;
+    color: #4D4D4D;
+}

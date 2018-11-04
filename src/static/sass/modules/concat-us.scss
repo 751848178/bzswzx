@@ -1,0 +1,107 @@
+﻿.concat-us{
+    @extend .module;
+    height: 456px;
+    background: url(/static/images/footer_bg.png) no-repeat;
+}
+.concat-us-content{
+    @extend .container;
+    padding-top: 70px;
+}
+.concat-region{
+    @extend .fl;
+    padding-top: 1px;
+    width: 600px;
+}
+.concat-tit{
+    height: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #FFF;
+    div{
+        @extend .fl;
+    }
+    span{
+        @extend .fl, .show;
+        margin-top: 10px;
+        border-radius: 50%;
+        width: 6px;
+        height: 6px;
+        background: #FFF;
+        &:nth-child(2){
+            margin-left: 12px;
+        }
+        &:nth-child(3){
+            margin: 10px 4px 0;
+            background: #FFFF00;
+        }
+    }
+}
+.news-text{
+    @extend .relative;
+    padding: 16px 0;
+    color: #FFF;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    .news-br{
+        @extend .absolute;
+        left: 0;
+        bottom: 0;
+    }
+    span{
+        @extend .fl, .show;
+        margin-right: 8px;
+        width: 30px;
+        height: 2px;
+        background: #FFFF00;
+        &:first-child{
+            width: 176px;
+            background: #FFF;
+        }
+    }
+}
+.concats{
+    margin-top: 90px;
+}
+.concats-item{
+    margin-bottom: 20px;
+    height: 38px;
+}
+.concat-img{
+    @extend .fl;
+    width: 38px;
+    height: 38px;
+}
+.concat-text{
+    @extend .fl;
+    margin-left: 10px;
+    height: 38px;
+    img{
+        height: 100%;
+    }
+}
+.concat-name{
+    margin-top: 2px;
+    width: 80px;
+    height: 10px;
+    color: #1164AA;
+    font-size: 12px;
+    font-weight: bold;
+}
+.concat-desc{
+    margin-top: 10px;
+    height: 12px;
+}
+.news-logo{
+    margin-top: 30px;
+    width: 266px;
+    height: 36px;
+    background: url(/static/images/logo.png) no-repeat;
+}
+.qrcodes{
+    margin-top: 56px;
+    height: 154px;
+    img{
+        margin-right: 26px;
+    }
+}

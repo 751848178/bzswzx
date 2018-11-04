@@ -1,0 +1,91 @@
+﻿.project{
+    @extend .module;
+    height: 621px;
+    background: #FFF;
+}
+.project-tab{
+    margin: 0 auto;
+    width: 1200px;
+}
+.project-tab-bar{
+    margin: 0 auto 20px;
+    width: 300px;
+    height: 50px;
+    .tab-item{
+        @extend .fl;
+        padding: 10px;
+        width: 150px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: initial;
+        text-align: center;
+        color: #FFF;
+        background: #45AAF0;
+        &.active{
+            background: #1164AA;
+        }
+        &:nth-child(2){
+            background: #1164AA;
+        }
+        div{
+            text-align: center;
+            font-weight: initial;
+            font-size: 10px;
+        }
+    }
+}
+.project-tab-content{
+    @extend .relative;
+    margin: 0 auto;
+    width: 1200px;
+}
+.project-content-item{
+    width: 1200px;
+    height: 282px;
+    background: #F4F4F4;
+}
+.project-img{
+    @extend .fl;
+    width: 600px;
+    height: 282px;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.project-desc{
+    @extend .fl;
+    padding: 34px 30px;
+    width: 600px;
+    height: 282px;
+    color: #666;
+}
+.project-body{
+    font-size: 14px;
+    li{
+        margin-bottom: 20px;
+        color: #4D4D4D;
+        list-style-type: inherit;
+    }
+}
+.project-btns{
+    @extend .absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 40px;
+}
+.left-btn, .right-btn{
+    @extend .fl, .show;
+    width: 50px;
+    height: 40px;
+    z-index: 2;
+    cursor: pointer;
+}
+.left-btn{
+    background: url(/static/images/left.png) no-repeat;
+}
+.right-btn{
+    background: url(/static/images/right.png) no-repeat;
+}

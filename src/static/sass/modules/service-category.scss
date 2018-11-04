@@ -1,0 +1,117 @@
+﻿.service-category{
+    @extend .module;
+    height: 740px;
+    background: #FFF;
+    overflow: hidden;
+}
+.category-bg{
+    margin-top: 305px;
+    width: 1920px;
+    height: 316px;
+    background-color: #F7F7F7;
+    background-image: url(/static/images/electronic.png);
+    background-repeat: no-repeat;
+    background-size: 1540px 316px;
+    background-position-x: center;
+}
+.category-item{
+    @extend .relative, .fl;
+    top: -215px;
+    width: 340px;
+    height: 432px;
+    &:nth-child(1){
+        .category-name{
+            background: url(/static/images/bidding_document.png) no-repeat;
+        }
+    }
+    &:nth-child(2){
+        margin: 0 90px;
+        .category-name{
+            background: url(/static/images/cost_consultation.png) no-repeat;
+        }
+    }
+    &:nth-child(3){
+        .category-name{
+            background: url(/static/images/electronic_bidding.png) no-repeat;
+        }
+    }
+    &:hover{
+        .category-desc{
+            @extend .hide;
+        }
+        .category-detail{
+            @extend .show;
+        }
+    }
+}
+.category-desc{
+    @extend .absolute;
+    top: 0;
+    left: 0;
+    padding: 38px 38px 33px;
+    width: 340px;
+    height: 432px;
+    color: #FFF;
+    background: rgba(0, 0, 0, 0.5);
+}
+.company{
+    font-size: 20px;
+    font-family:MicrosoftYaHeiLight;
+    font-weight:300;
+    background: url(/static/images/plus.png) no-repeat;
+    background-position: right top;
+    div{
+        margin-top: 7px;
+        font-size: 14px;
+    }
+}
+.category-name{
+    @extend .absolute;
+    left: 38px;
+    bottom: 33px;
+    padding-top: 6px;
+    height: 40px;
+    color: #FFF;
+    text-indent: 52px;
+    background-size: 40px 40px;
+    background-position: 0 0;
+    .en{
+        margin-top: 2px;
+        font-size:12px;
+        font-weight:400;
+    }
+}
+.category-detail{
+    @extend .absolute, .hide;
+    left: 20px;
+    bottom: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 196px;
+    background: url(/static/images/text_logo.png) no-repeat;
+    background-position: 158px 156px;
+    background-color: #FFF;
+    &::after{
+        @extend .show, .absolute;
+        content: "";
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: linear-gradient(90deg,rgba(71,252,203,1) 0%,rgba(0,174,255,1) 100%);
+    }
+    .detail-tit{
+        color: #666;
+        font-size: 20px;
+        .en{
+            font-size: 12px;
+        }
+    }
+    .detail-content{
+        margin-top: 30px;
+        text-indent: 2em;
+        color: #999;
+        font-size: 14px;
+        line-height: 20px;
+    }
+}
