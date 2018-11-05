@@ -17,7 +17,7 @@
         width: 150px;
         height: 50px;
         font-size: 16px;
-        font-weight: initial;
+        font-weight: bold;
         text-align: center;
         color: #FFF;
         background: #45AAF0;
@@ -38,11 +38,27 @@
     @extend .relative;
     margin: 0 auto;
     width: 1200px;
+    .project-tit{
+        @extend .relative;
+        &::after{
+            @extend .show-in-bl, .absolute;
+            left: 70px;
+            top: 14px;
+            content: "";
+            width: 50px;
+            height: 2px;
+            background: #45AAF0;
+        }
+    }
 }
 .project-content-item{
+    @extend .hide;
     width: 1200px;
     height: 282px;
     background: #F4F4F4;
+    &.active{
+        @extend .show;
+    }
 }
 .project-img{
     @extend .fl;

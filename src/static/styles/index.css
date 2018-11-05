@@ -4,7 +4,7 @@
 /* 将具有默认margin和padding的标记置零 */
 body, div, p, ul, li, dt, dl, dd, h1, h2, h3, h4, h5, h6, table, thead, tbody, tr, th, td { margin: 0; padding: 0; text-align: left; }
 
-body { color: #000; background: #fff; font-family: SimHei; }
+body { color: #000; background: #fff; font-family: MicrosoftYaHei; }
 
 /* 清除浮动 */
 .clearfix:after { display: block; clear: both; content: ''; }
@@ -69,9 +69,9 @@ input:focus { outline: none; }
 .dis-unline { text-decoration: none; }
 
 /* 定位关系 */
-.absolute, .book, .banner-text, .category-desc, .category-name, .category-detail, .category-detail::after, .process-tit img, .scope-tab .scope-tab-bar .tab-item.active::after, .project-btns, .about-tit, .news-text .news-br { position: absolute; }
+.absolute, .book, .banner-text, .category-desc, .category-name, .category-detail, .category-detail::after, .process-tit img, .scope-tab .scope-tab-bar .tab-item.active::after, .project-tab-content .project-tit::after, .project-btns, .about-tit, .news-text .news-br { position: absolute; }
 
-.relative, .carousel, .category-item, .process-tit, .scope-tab .scope-tab-bar .tab-item, .project-tab-content, .enterprise-module, .news-text { position: relative; }
+.relative, .carousel, .category-item, .process-tit, .scope-tab .scope-tab-bar .tab-item, .project-tab-content, .project-tab-content .project-tit, .enterprise-module, .news-text { position: relative; }
 
 /* 隐藏元素 当元素内容内容超出元素height 或 width 时，隐藏之 */
 .o-hidden, .process-item:last-child { overflow: hidden; }
@@ -80,16 +80,16 @@ input:focus { outline: none; }
 .invisible { visibility: hidden; }
 
 /* 从页面布局上隐藏元素 */
-.hide, .category-item:hover .category-desc, .category-detail, .scope-tab .business { display: none !important; }
+.hide, .category-item:hover .category-desc, .category-detail, .scope-tab .business, .project-content-item { display: none !important; }
 
-.show, .category-item:hover .category-detail, .category-detail::after, .scope-tab .scope-tab-bar .tab-item.active::after, .scope-tab .business.active, .left-btn, .right-btn, .enterprise-module li::before, .concat-tit span, .news-text span { display: block !important; }
+.show, .category-item:hover .category-detail, .category-detail::after, .scope-tab .scope-tab-bar .tab-item.active::after, .scope-tab .business.active, .project-content-item.active, .left-btn, .right-btn, .enterprise-module li::before, .concat-tit span, .news-text span { display: block !important; }
 
 /* 从页面布局上显示元素 */
 .show-inline { display: inline; }
 
 .show-block { display: block; }
 
-.show-in-bl { display: inline-block; }
+.show-in-bl, .project-tab-content .project-tit::after { display: inline-block; }
 
 .trans-5 { filter: alpha(opacity=50); -moz-opacity: 0.5; opacity: 0.5; background: #000; z-index: 105; }
 
@@ -247,7 +247,7 @@ nav { background: #1164AA; color: #FFF; width: 100%; height: 100px; }
 
 .project-tab-bar { margin: 0 auto 20px; width: 300px; height: 50px; }
 
-.project-tab-bar .tab-item { padding: 10px; width: 150px; height: 50px; font-size: 16px; font-weight: initial; text-align: center; color: #FFF; background: #45AAF0; }
+.project-tab-bar .tab-item { padding: 10px; width: 150px; height: 50px; font-size: 16px; font-weight: bold; text-align: center; color: #FFF; background: #45AAF0; }
 
 .project-tab-bar .tab-item.active { background: #1164AA; }
 
@@ -256,6 +256,8 @@ nav { background: #1164AA; color: #FFF; width: 100%; height: 100px; }
 .project-tab-bar .tab-item div { text-align: center; font-weight: initial; font-size: 10px; }
 
 .project-tab-content { margin: 0 auto; width: 1200px; }
+
+.project-tab-content .project-tit::after { left: 70px; top: 14px; content: ""; width: 50px; height: 2px; background: #45AAF0; }
 
 .project-content-item { width: 1200px; height: 282px; background: #F4F4F4; }
 
