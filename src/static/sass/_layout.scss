@@ -2,4 +2,12 @@
     margin-left: calc((-100vw + 1200px) / 2);
     padding-top: 1px;
     width: $fill-width;
+    .module-bg{
+        @extend .absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        z-index: -1;
+    }
 }

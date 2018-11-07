@@ -1,0 +1,48 @@
+﻿.about{
+    @extend .module;
+    height: px(1096);
+    background-color: #F5F5F5;
+    background-image: url(/static/images/about_bg.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+.about-content{
+    width: px(750);
+}
+.enterprise-module{
+    @extend .relative;
+    margin: 0 auto;
+    padding: px(108) px(26) px(31);
+    width: px(702);
+    height: px(400);
+    color: #4D4D4D;
+    font-size: px(26);
+    &:first-child{
+        background: #FFF;
+        .about-text{
+            text-indent: 2em;
+            line-height: px(30);
+        }
+    }
+    li{
+        margin-bottom: px(20);
+    }
+    li::before{
+        @extend .fl, .show;
+        content: "■";
+        margin-right: px(20);
+        color: #45AAF0;
+        transform: scale(0.5, 0.5);
+    }
+}
+.about-tit{
+    @extend .absolute;
+    top: px(30);
+    left: px(-6);
+    width: px(160);
+    height: px(50);
+    line-height: px(50);
+    text-align: center;
+    color: #FFF;
+    background: url(/static/images/small_tit_bg.png) no-repeat;
+}

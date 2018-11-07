@@ -1,9 +1,12 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
+const sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('build-scss', () => {
-    return gulp.src('src/static/sass/index.scss')
+    return gulp.src('src/static/sass/index*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass({outputStyle: 'compact'}).on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('src/static/styles/'));
 });
 

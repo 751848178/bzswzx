@@ -1,22 +1,22 @@
 ﻿.project{
     @extend .module;
-    height: 621px;
+    height: px(1192);
     background: #FFF;
 }
 .project-tab{
     margin: 0 auto;
-    width: 1200px;
+    width: px(750);
 }
 .project-tab-bar{
-    margin: 0 auto 20px;
-    width: 300px;
-    height: 50px;
+    margin: 0 auto px(20);
+    width: px(440);
+    height: px(70);
     .tab-item{
         @extend .fl;
-        padding: 10px;
-        width: 150px;
-        height: 50px;
-        font-size: 16px;
+        padding: px(10);
+        width: px(220);
+        height: px(70);
+        font-size: px(28);
         font-weight: bold;
         text-align: center;
         color: #FFF;
@@ -30,36 +30,36 @@
         div{
             text-align: center;
             font-weight: initial;
-            font-size: 10px;
+            font-size: px(16);
         }
     }
 }
 .project-tab-content{
     @extend .relative;
     margin: 0 auto;
-    width: 1200px;
+    width: px(600);
     .project-tit{
         @extend .relative;
-        font-weight: 600;
+        width: px(552);
+        font-size: px(28);
         &::after{
             @extend .show-in-bl, .absolute;
-            left: 70px;
-            top: 14px;
+            left: px(124);
+            top: px(24);
             content: "";
-            width: 50px;
-            height: 2px;
+            width: px(50);
+            height: px(2);
             background: #45AAF0;
         }
         .en{
-            color: #666;
-            font-size: 12px;
+            font-size: px(18);
         }
     }
 }
 .project-content-item{
     @extend .hide;
-    width: 1200px;
-    height: 282px;
+    width: px(600);
+    height: px(852);
     background: #F4F4F4;
     &.active{
         @extend .show;
@@ -67,8 +67,8 @@
 }
 .project-img{
     @extend .fl;
-    width: 600px;
-    height: 282px;
+    width: px(600);
+    height: px(282);
     img{
         width: 100%;
         height: 100%;
@@ -76,15 +76,15 @@
 }
 .project-desc{
     @extend .fl;
-    padding: 34px 30px;
-    width: 600px;
-    height: 282px;
+    padding: px(24);
+    width: px(600);
+    height: px(570);
     color: #666;
 }
 .project-body{
-    font-size: 14px;
+    font-size: px(26);
     li{
-        margin-bottom: 20px;
+        margin-bottom: px(20);
         color: #4D4D4D;
         list-style-type: inherit;
     }
@@ -94,19 +94,21 @@
     left: 50%;
     bottom: 0;
     transform: translateX(-50%);
-    width: 100px;
-    height: 40px;
+    width: px(100);
+    height: px(40);
 }
 .left-btn, .right-btn{
     @extend .fl, .show;
-    width: 50px;
-    height: 40px;
+    width: px(50);
+    height: px(40);
     z-index: 2;
     cursor: pointer;
 }
 .left-btn{
     background: url(/static/images/left.png) no-repeat;
+    background-size: px(50) px(40);
 }
 .right-btn{
     background: url(/static/images/right.png) no-repeat;
+    background-size: px(50) px(40);
 }

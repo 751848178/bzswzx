@@ -1,8 +1,6 @@
 ﻿.carousel{
     @extend .module, .relative;
     height: 845px;
-    background: url(/static/images/carousel.png) no-repeat;
-    background-size: cover;
 }
 .easier{
     margin: 356px auto 0;

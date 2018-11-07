@@ -1,0 +1,122 @@
+﻿.concat-us{
+    @extend .module;
+    height: px(456);
+    background: url(/static/images/footer_bg.png) no-repeat;
+}
+.concat-us-content{
+    @extend .container;
+    padding-top: px(62);
+}
+.concat-region{
+    @extend .fl;
+    padding-top: 1px;
+    width: px(374);
+    &:first-child{
+        padding-left: px(10);
+
+    }
+}
+.concat-tit{
+    height: px(24);
+    font-size: px(24);
+    font-weight: 500;
+    color: #FFF;
+    div{
+        @extend .fl;
+    }
+    span{
+        @extend .fl, .show;
+        margin-top: px(10);
+        border-radius: 50%;
+        width: px(6);
+        height: px(6);
+        background: #FFF;
+        &:nth-child(2){
+            margin-left: px(12);
+        }
+        &:nth-child(3){
+            margin: px(10) px(4) 0;
+            background: #FFFF00;
+        }
+    }
+}
+.news-text{
+    @extend .relative;
+    padding: px(16) 0;
+    color: #FFF;
+    font-size: px(30);
+    font-weight: bold;
+    letter-spacing: px(2);
+    .news-br{
+        @extend .absolute;
+        left: 0;
+        bottom: 0;
+    }
+    span{
+        @extend .fl, .show;
+        margin-right: px(8);
+        width: px(30);
+        height: px(2);
+        background: #FFFF00;
+        &:first-child{
+            width: px(176);
+            background: #FFF;
+        }
+    }
+}
+.concats{
+    margin-top: px(90);
+    &>.concats-item:last-child{
+        width: px(380);
+    }
+}
+.concats-item{
+    margin-bottom: px(20);
+    height: px(38);
+}
+.concat-img{
+    @extend .fl;
+    width: px(38);
+    height: px(38);
+    img{
+        width: 100%;
+        height: 100%;
+    }
+}
+.concat-text{
+    @extend .fl;
+    margin-left: px(10);
+    height: px(38);
+    img{
+        height: 100%;
+    }
+}
+.concat-name{
+    margin-top: px(2);
+    width: px(80);
+    height: px(10);
+    color: #1164AA;
+    font-size: px(12);
+    font-weight: bold;
+}
+.concat-desc{
+    margin-top: px(10);
+    height: px(12);
+}
+.news-logo{
+    margin-top: px(30);
+    width: px(266);
+    height: px(36);
+    background: url(/static/images/logo.png) no-repeat;
+    background-size: contain;
+}
+.qrcodes{
+    margin-top: px(56);
+    height: px(154);
+    img{
+        @extend .fl;
+        margin-right: px(26);
+        width: px(154);
+        height: px(154);
+    }
+}

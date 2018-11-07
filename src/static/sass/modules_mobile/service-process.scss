@@ -1,0 +1,55 @@
+﻿.service-process{
+    @extend .module;
+    height: px(1292);
+    .module-bg{
+        top: 0;
+        left: auto;
+        right: 0;
+        width: px(1292);
+        height: px(806);
+        transform: initial;
+    }
+    .module-tit{
+        margin: px(68) auto px(58);
+    }
+}
+.process-content{
+    width: 100vw;
+    height: px(1096);
+}
+.process-item{
+    @extend .fl;
+    padding-top: px(22);
+    width: 100%;
+}
+.process-tit{
+    @extend .relative;
+    padding: px(8) px(10) px(8) px(50);
+    width: px(280);
+    height: px(60);
+    color: #FFF;
+    font-size: px(26);
+    background: url(/static/images/process_bg.png) no-repeat;
+    background-size: px(280) px(60);
+    letter-spacing: px(-3);
+    span{
+        font-size: px(20);
+    }
+    img{
+        @extend .absolute;
+        top: px(6);
+        left: px(20);
+        height: px(44);
+    }
+    div{
+        line-height: px(14);
+        font-size: px(14);
+        letter-spacing: px(-2);
+    }
+}
+.process-text{
+    margin: px(26) px(50) px(18);
+    width: px(648);
+    font-size: px(26);
+    color: #4D4D4D;
+}

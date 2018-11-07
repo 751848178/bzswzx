@@ -1,0 +1,127 @@
+﻿@import "base";
+
+html{
+    font-size: calc(100vw / 750 * 32);
+}
+$rootFontSize : 32;
+$colorBlue: #002E00;
+@function px($px){
+	@if $px != auto {
+		@return $px / $rootFontSize * 1rem;
+	} @else {
+		@return auto;
+	}
+}
+body{
+    overflow-x: hidden;
+}
+.module{
+    @extend .relative;
+    padding-top: 1px;
+    width: 100vw;
+    .module-bg{
+        @extend .absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        z-index: -1;
+    }
+}
+.container{
+    width: 100vw;
+}
+/* nav */
+nav{
+    @extend .relative;
+    width: 100%;
+    height: px(100);
+    color: #FFF;
+    background: #1164AA;
+    z-index: 2;
+}
+.logo{
+    float: left;
+    margin-left: px(24);
+    padding: px(22) 0;
+    width: px(332);
+    height: px(100);
+    line-height: px(100);
+}
+.logo img{
+    height: px(56);
+}
+.nav{
+    @extend .absolute;
+    top: px(100);
+    left: 0;
+    display: none;
+    float: left;
+    width: px(750);
+    background: #1164AA;
+}
+.nav-item{
+    padding: 0 px(2);
+    width: 100%;
+    font-size: px(18);
+    height: px(100);
+    line-height: px(100);
+}
+.nav-link{
+    display: block;
+    padding: 0 px(22);
+    color: #FFF;
+    height: px(100);
+    line-height: px(100);
+    text-align: center;
+}
+.nav-btn{
+    display: block;
+    margin: px(38) px(24) 0;
+    width: px(40);
+    height: px(25);
+    float: right;
+    background: url(/static/images/nav_btn.png) no-repeat;
+    background-size: contain;
+}
+/* End nav */
+
+
+
+/* common */
+.module-tit{
+    margin: px(76) auto;
+    width: px(500);
+    height: px(54);
+    line-height: px(26);
+    color: #2C2C2C;
+    font-size: px(26);
+    font-weight: bold;
+    text-align: center;
+    background: url(../images/module_tit.png) no-repeat;
+    background-position: center bottom;
+    background-size: px(334) px(20);
+    .en{
+        line-height: px(16);
+        text-align: center;
+        color: #343434;
+        font-size: px(16);
+        span{
+            font-weight: normal;
+        }
+    }
+    &.white{
+        background-image: url(../images/module_tit_white.png);
+    }
+}
+
+/* End common */
+
+@import "modules_mobile/first-screen";
+@import "modules_mobile/service-category";
+@import "modules_mobile/service-process";
+@import "modules_mobile/service-scope";
+@import "modules_mobile/bidding";
+@import "modules_mobile/project";
+@import "modules_mobile/about";
+@import "modules_mobile/concat-us";

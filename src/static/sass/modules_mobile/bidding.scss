@@ -1,0 +1,68 @@
+﻿.bidding{
+    @extend .module;
+    height: px(624);
+    background-color: #F7F7F7;
+    background-image: url(/static/images/electronic.png);
+    background-repeat: no-repeat;
+    background-size: px(750) px(160);
+    .module-tit{
+        color: #FFF;
+        .en{
+            margin-top: px(2);
+            color: #FFF;
+        }
+    }
+}
+.bidding-content{
+    @extend .container;
+    padding-top: 1px;
+    width: px(750);
+}
+.process-top{
+    margin-top: px(80);
+    width: 100%;
+    height: px(66);
+    color: #4D4D4D;
+    font-size: px(26);
+    font-weight: 500;
+    div{
+        @extend .fl;
+        width: px(160);
+        text-align: center;
+        &:nth-child(1){
+            margin-left: px(14);
+        }
+        &:nth-child(2){
+            margin-left: px(122);
+        }
+        &:nth-child(3){
+            margin-top: px(14);
+            margin-left: px(124);
+        }
+    }
+}
+.process-img{
+    margin: px(8) px(20);
+    img{
+        width: px(710);
+    }
+}
+.process-bottom{
+    width: 100%;
+    height: px(66);
+    color: #4D4D4D;
+    font-size: px(26);
+    font-weight: 500;
+    div{
+        @extend .fl;
+        width: px(160);
+        text-align: center;
+        &:nth-child(1){
+            margin-left: px(156);
+        }
+        &:nth-child(2){
+            width: px(212);
+            margin-left: px(96);
+        }
+    }
+}

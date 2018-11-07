@@ -1,0 +1,68 @@
+﻿.service-scope{
+    @extend .module;
+    height: px(722);
+    background: #FFF;
+}
+.scope-content{
+    @extend .container;
+}
+.scope-tab{
+    margin: px(54) auto 0;
+    width: px(750);
+    .scope-tab-bar{
+        padding: 0 px(140);
+        width: px(750);
+        height: px(36);
+        .tab-item{
+            @extend .fl, .relative;
+            margin: 0 px(33);
+            height: px(36);
+            color: #2C2C2C;
+            font-size: px(28);
+            font-weight: 500;
+            &.active::after{
+                @extend .show, .absolute;
+                content: "";
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                height: px(3);
+                background: linear-gradient(90deg,rgba(71,252,203,1) 0%,rgba(0,174,255,1) 100%);
+            }
+        }
+    }
+    .scope-tab-content{
+        margin-top: px(30);
+        width: px(750);
+    }
+    .business{
+        @extend .hide;
+        padding-left: px(50);
+        &.active{
+            @extend .show;
+        }
+    }
+    .buss-item{
+        @extend .fl;
+        margin: 0 px(26) px(26) 0;
+        border: 1px solid #B3B3B3;
+        width: px(200);
+        height: px(60);
+        line-height: px(60);
+        color: #333;
+        font-size: px(26);
+        text-align: center;
+        &:hover{
+            border: none;
+            color: #FFF;
+            background: linear-gradient(90deg,rgba(38,217,226,1) 0%,rgba(0,174,255,1) 100%);
+        }
+        &.buss-more{
+            border: none;
+            &:hover{
+                color: #333;
+                background: none;
+            }
+        }
+    }
+}
