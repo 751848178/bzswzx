@@ -14,5 +14,11 @@ gulp.task("build:watch", () => {
     gulp.watch('src/static/sass/**/*.scss', ['build-scss']);
 });
 
+gulp.task("build", () => {
+    return gulp.src('src/static/sass/index*.scss')
+        .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
+        .pipe(gulp.dest('src/static/styles/'));
+});
+
 gulp.task("default", ["build-scss", "build:watch"]);
 
