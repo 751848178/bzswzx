@@ -7,6 +7,7 @@
     width: px(644);
     height: px(100);
     background: url(/static/images/easier_s.png) no-repeat;
+    background-size: contain;
 }
 .book{
     @extend .absolute;
@@ -16,6 +17,7 @@
     height: px(350);
     background: url(/static/images/book.png) no-repeat;
     background-size: contain;
+    z-index: 1;
 }
 .banner-text{
     @extend .absolute;
