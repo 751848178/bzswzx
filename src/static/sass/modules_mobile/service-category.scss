@@ -10,7 +10,7 @@
     height: px(722);
 }
 .category-item{
-    @extend .relative, .o-hidden;
+    @extend .relative, .o-hidden, .show;
     margin: px(10) auto;
     width: px(702);
     height: px(200);
@@ -43,19 +43,28 @@
 }
 .category-desc{
     @extend .relative, .fl;
-    padding: px(38) px(38) px(33);
+    padding: px(35) px(38) px(33);
     width: px(340);
     height: px(200);
     color: #FFF;
     background: rgba(0, 0, 0, 0.5);
 }
 .company{
-    font-size: px(20);
-    background: url(/static/images/plus.png) no-repeat;
-    background-position: right top;
+    @extend .relative;
+    font-size: px(24);
+    font-weight: normal;
+    // background: url(/static/images/plus.png) no-repeat;
+    // background-position: right top;
+    &::after{
+        display: inline-block;
+        @extend .absolute;
+        top: 0;
+        right: 0;
+        content: "+";
+        font-size: px(20);
+    }
     div{
-        margin-top: px(8);
-        font-size: px(14);
+        font-size: px(18);
     }
 }
 .category-name{
@@ -71,6 +80,7 @@
     background-repeat: no-repeat;
     font-size: px(16);
     .en{
+        display: none;
         margin-top: px(2);
         font-size: px(12);
         font-weight: 400;

@@ -2,7 +2,7 @@
     @extend .relative;
     margin-left: calc((-100vw + 1200px) / 2);
     padding-top: 1px;
-    width: $fill-width;
+    width: 1920px;
     .module-bg{
         @extend .absolute;
         top: 0;
@@ -10,5 +10,21 @@
         transform: translateX(-50%);
         height: 100%;
         z-index: -1;
+    }
+}
+@media screen and (max-width: 1200px){
+    body{
+        width: 1200px;
+        overflow-x: scroll !important;
+    }
+    .module{
+        margin-left: -360px;
+        width: 1920px;
+    }
+    .navbar{
+        width: 1920px;
+    }
+    #carousel.container, #category.container, #process.container, #scope.container, #bidding.container, #project.container, #about.container, #concat-us.container, {
+        margin-left: 0;
     }
 }

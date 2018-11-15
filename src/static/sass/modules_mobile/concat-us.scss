@@ -65,14 +65,27 @@
     }
 }
 .concats{
-    margin-top: px(90);
+    margin-top: px(30);
     &>.concats-item:last-child{
-        width: px(380);
+        width: px(750);
+        .concat-desc{
+            margin-top: px(10);
+            width: px(656);
+            img{
+                width: px(460);
+            }
+        }
     }
 }
 .concats-item{
     margin-bottom: px(20);
     height: px(38);
+    &.fl{
+        float: none;
+    }
+    &:last-child{
+        margin-left: 0 !important;
+    }
 }
 .concat-img{
     @extend .fl;

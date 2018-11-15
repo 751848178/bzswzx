@@ -54,11 +54,11 @@ nav{
 .nav{
     @extend .absolute;
     top: px(100);
-    left: 0;
+    right: 0;
     display: none;
     float: left;
-    width: px(750);
-    background: #1164AA;
+    width: px(200);
+    background: rgba(0,0,0,0.7);
 }
 .nav-item{
     padding: 0 px(2);

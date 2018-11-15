@@ -16,8 +16,8 @@
         padding: px(10);
         width: px(220);
         height: px(70);
+        line-height: px(50);
         font-size: px(28);
-        font-weight: bold;
         text-align: center;
         color: #FFF;
         background: #45AAF0;
@@ -28,6 +28,7 @@
             background: #1164AA;
         }
         div{
+            display: none;
             text-align: center;
             font-weight: initial;
             font-size: px(16);
@@ -52,6 +53,7 @@
             background: #45AAF0;
         }
         .en{
+            color: #666;
             font-size: px(18);
         }
     }
@@ -59,7 +61,7 @@
 .project-content-item{
     @extend .hide;
     width: px(600);
-    height: px(852);
+    height: px(882);
     background: #F4F4F4;
     &.active{
         @extend .show;
@@ -78,11 +80,14 @@
     @extend .fl;
     padding: px(24);
     width: px(600);
-    height: px(570);
+    height: px(600);
     color: #666;
 }
 .project-body{
     font-size: px(26);
+    ol{
+        padding-left: px(40);
+    }
     li{
         margin-bottom: px(20);
         color: #4D4D4D;

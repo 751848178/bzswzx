@@ -12,11 +12,11 @@
     .scope-tab-bar{
         padding: 0 px(140);
         width: px(750);
-        height: px(36);
+        height: px(46);
         .tab-item{
             @extend .fl, .relative;
             margin: 0 px(33);
-            height: px(36);
+            height: px(46);
             color: #2C2C2C;
             font-size: px(28);
             font-weight: 500;

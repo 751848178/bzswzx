@@ -15,17 +15,18 @@
     padding: px(108) px(26) px(31);
     width: px(702);
     height: px(400);
-    color: #4D4D4D;
+    color: #4C4C4C;
     font-size: px(26);
+    background: #FFF;
     &:first-child{
-        background: #FFF;
+        margin-bottom: px(20);
         .about-text{
             text-indent: 2em;
-            line-height: px(30);
+            line-height: px(40);
         }
     }
     li{
-        margin-bottom: px(20);
+        margin-bottom: px(10);
     }
     li::before{
         @extend .fl, .show;
