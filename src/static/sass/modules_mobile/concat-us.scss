@@ -1,5 +1,5 @@
 ﻿.concat-us{
-    @extend .module;
+    @extend .module, .o-hide;
     height: px(456);
     background: url(/static/images/footer_bg.png) no-repeat;
 }
