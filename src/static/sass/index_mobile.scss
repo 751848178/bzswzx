@@ -25,7 +25,11 @@ body{
         left: 50%;
         transform: translateX(-50%);
         height: 100%;
+        overflow: hidden;
         z-index: -1;
+        img{
+            height: 100%;
+        }
     }
 }
 .container{
