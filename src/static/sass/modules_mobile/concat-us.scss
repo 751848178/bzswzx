@@ -2,6 +2,7 @@
     @extend .module;
     height: px(456);
     background: url(/static/images/footer_bg.png) no-repeat;
+    overflow: hidden;
 }
 .concat-us-content{
     @extend .container;

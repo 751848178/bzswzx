@@ -1,5 +1,6 @@
 ﻿.service-category{
     @extend .module;
+    position: static;
     height: 740px;
     background: #FFF;
     overflow: hidden;
