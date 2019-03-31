@@ -100,9 +100,20 @@
 .concat-text{
     @extend .fl;
     margin-left: px(10);
+    width: px(156);
     height: px(38);
     img{
         height: 100%;
+    }
+}
+.concat-font{
+    position: absolute;
+    left: px(-16);
+    transform: scale(0.8);
+    font-size: 12px;
+    color: #FFF;
+    &.address-text{
+        left: px(-60);
     }
 }
 .concat-name{
@@ -114,8 +125,15 @@
     font-weight: bold;
 }
 .concat-desc{
+    position: relative;
     margin-top: px(10);
     height: px(12);
+    &.tel{
+        width: px(316);
+        .concat-font{
+            left: px(-34);
+        }
+    }
 }
 .news-logo{
     margin-top: px(30);
